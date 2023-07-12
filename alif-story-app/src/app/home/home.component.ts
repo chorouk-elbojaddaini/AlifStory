@@ -27,31 +27,31 @@ export class HomeComponent {
 
   middle_cards = [
     {
-      icon: "assets",
+      icon: "assets/home-images/book.png",
       desc: "47 récits"
     },
     {
-      icon: "assets",
+      icon: "assets/home-images/islam.png",
       desc: "7 prophètes"
     },
     {
-      icon: "assets",
+      icon: "assets/home-images/ecoute.png",
       desc: "+ de 3h d'écoute"
     },
     {
-      icon: "assets",
+      icon: "assets/home-images/onde.png",
       desc: "sans onde !"
     }
   ];
   products = [
     {
       title: "Des livrets pédagogiques",
-      image: "assets",
+      image: "assets/home-images/kidIslamreading.jpg",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, exercitationem odio obcaecati nam libero"
     },
     {
       title: "D'autres récits à télécharger",
-      image: "assets",
+      image: "assets/home-images/kidIslamreading.jpg",
       description: "Lorem ipsum dolor sitadipisicing elit. Neque, exercitationem rem ex unde rerum officiis beatae laborum, odio obcaecati nam libero"
     }
   ];

@@ -1,3 +1,11 @@
+button{
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    color: var(--blue);
+    border: none;
+    cursor: pointer;
+    border: 1px solid var(--blue);
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -17,10 +25,16 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
+        
 
         >span {
             font-size: 2.5rem;
             font-weight: 200;
+        }
+
+        .big-title {
+            font-family: 'Pacifico', cursive;
+            color: rgb(22, 20, 20);
         }
 
         .links {
@@ -35,11 +49,24 @@
 
             .commander-btn {
                 background-color: var(--blue);
-                color: aliceblue;
+                color: rgb(252, 252, 252);
+                transition-property: all;
+  transition-duration: 0.3s;
             }
+            .commander-btn:hover{
+                background-color: transparent;
+                color: var(--blue);
 
+                
+            }
             .savoir-plus-btn {
                 color: var(--blue);
+                transition-property: all;
+                transition-duration: 0.3s;
+            }
+            .savoir-plus-btn:hover{
+                background-color: var(--blue);
+                color: rgb(252, 252, 252);
             }
         }
     }
@@ -57,18 +84,34 @@
     flex-wrap: wrap;
 
     .card {
-        width: 200px;
+        width: 250px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        top: -37px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
 
         .card-content {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            position: relative;
-            top: -37px;
-            background-color: rgb(233, 233, 233);
             padding: 11px;
-            border-radius: 5px;
-
+            color: var(--black);
+            .card-title {
+                color: var(--blue);
+            }
+            .btn-voir-plus{
+                border: none;
+                color: var(--blue);
+                background-color: transparent;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 15px;
+            }
+            .btn-voir-plus:hover{
+                color: var(--blue-hover);
+                    transform: scaleX(1.2);
+            }
 
         }
     }
@@ -78,12 +121,12 @@
 .middle-container {
     background-color: white;
     width: 100%;
-
+    height: 170px;
     .middle-cards {
         background-color: var(--blue);
         color: white;
         height: fit-content;
-        padding: 15px;
+        padding: 25px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -91,11 +134,19 @@
         text-align: center;
         gap: 25px;
         position: relative;
-        top: -45px;
 
         .card {
             border-right: 1px solid rgb(255, 255, 255);
             padding-right: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .card-icon{
+            width: 47px;
+            height: 38px;
         }
 
     }
@@ -112,7 +163,12 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 50px;
+    .product-title{
+        color:var(--blue);
+        
+    }
     .content-products {
         display: flex;
         flex-direction: row;
@@ -123,11 +179,36 @@
 
         .product-card {
             width: 300px;
-            height: 200px;
-            background-color: rgb(218, 218, 218);
+            height: fit-content;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-right: 15px;
             padding: 18px;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            .title-prod-card{
+                font-family: 'Pacifico', cursive;
+                font-weight: 600;
+                font-size: 22px;
+            }
+            .img-kid{
+                width: 250px;
+                height: 220px;
+                border-radius: 5px;
+            }
+            .decouvrir-btn{
+                border: none;
+                background-color: var(--blue);
+                color: white;
+                font-family: 'Dancing Script', cursive;
+                font-weight: 500;
+                padding: 10px;
+                border-radius: 15px;
+            }
         }
 
         .decouvrir {
@@ -135,13 +216,24 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            gap: 12px;
+            color: var(--black);
             padding: 8px;
+            .span-decouvrir{
+                color: var(--blue);
+            }
+            .boutique-btn {
+                width: fit-content;
+                border-radius: 15px;
+                padding: 10px;
+            }
         }
     }
 }
 
 //===============CARDS OF OPINIONS================
-.avis-clients{
+.avis-clients {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +242,14 @@
     gap: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
-    .avis-cards{
+    font-family: 'Dancing Script', cursive;
+    .product-title{
+        font-family: 'Pacifico', cursive;
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--blue);
+    }
+    .avis-cards {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -158,8 +257,10 @@
         flex-wrap: wrap;
         gap: 15px;
         padding: 15px;
-        .content{
+      
+        .content {
             background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 12px;
             border-radius: 5px;
             display: flex;
@@ -169,22 +270,36 @@
             flex-wrap: wrap;
             width: 250px;
             gap: 10px;
-            .rating{
-                .date{
+            .name-client{
+                color: var(--blue);
+            }
+            .rating {
+                .date {
                     margin-right: 15px;
+                    color: var(--brown-color);
                 }
             }
         }
+        
+    }
+    .btn-voir-tous{
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .btn-voir-tous:hover{
+        color: white;
+        background-color: var(--blue);
     }
 }
+
 .rating {
     color: var(--blue);
-  }
-  
-  .fa-star {
+}
+
+.fa-star {
     font-size: 20px;
-  }
-  
-  .fa-star.checked {
+}
+
+.fa-star.checked {
     color: gold;
-  }
+}

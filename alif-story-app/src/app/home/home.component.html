@@ -1,7 +1,7 @@
 <div class="container">
-    <img src="assets/boite.png" class="boite-img">
+    <img src="assets/home-images/boite.png" class="boite-img">
     <div class="content">
-        <span>Découvrez la boite à histoires Alif Story</span>
+        <span class="big-title">Découvrez la boite à histoires Alif Story</span>
         <div class="links">
             <span class="commander-btn">COMMANDER</span>
             <span class="savoir-plus-btn">EN SAVOIR PLUS</span>
@@ -13,14 +13,14 @@
         <div class="card-content">
             <span class="card-title">{{card.title}}</span>
             <p class="card-description">{{card.description}}</p>
-            <button>voir plus</button>
+            <button class="btn-voir-plus">voir plus</button>
         </div>
     </div>
 </div>
 <div class="middle-container">
     <div class="middle-cards">
         <div class="card" *ngFor="let card of middle_cards">
-            <span class="card-icon">{{card.icon}}</span>
+            <img  [src]="card.icon" alt="Icon" class="card-icon">
             <p class="card-descr">{{card.desc}}</p>
         </div>
     </div>
@@ -31,18 +31,17 @@
     </div>
     <div class="content-products">
         <div class="product-card" *ngFor="let card of products">
-            <span>{{card.title}}</span>
-            <p>img
-            <p>
+            <span class="title-prod-card">{{card.title}}</span>
+            <img [src]="card.image" alt="islamKids" class="img-kid" />
             <p>{{card.description}}</p>
-            <button>DÉCOUVRIR</button>
+            <button class="decouvrir-btn">DÉCOUVRIR</button>
         </div>
         <div class="decouvrir">
-            <span>DÉCOUVRIR LES PRODUITS COMPLÉMENTAIRES</span>
+            <span class="span-decouvrir">DÉCOUVRIR LES PRODUITS COMPLÉMENTAIRES</span>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui molestiae soluta enim beatae explicabo quod
                 sunt quibusdam accusamus quas aut incidunt inventore deserunt in, laudantium unde pariatur aspernatur
                 laborum. Architecto.</p>
-            <button>VOIR LA BOUTIQUE</button>
+            <button class="boutique-btn ">VOIR LA BOUTIQUE</button>
         </div>
     </div>
 
@@ -53,7 +52,7 @@
     </div>
     <div class="avis-cards">
         <div class="content" *ngFor="let info of opinions">
-            <span>{{info.name}}</span>
+            <span class="name-client">{{info.name}}</span>
             <span>{{info.opinion}}</span>
             <div class="rating">
                 <span class="date">Le {{info.date}}</span>
@@ -65,5 +64,5 @@
             </div>
         </div>
     </div>
-    <button>VOIR TOUS LES AVIS</button>
+    <button class="btn-voir-tous">VOIR TOUS LES AVIS</button>
 </div>
