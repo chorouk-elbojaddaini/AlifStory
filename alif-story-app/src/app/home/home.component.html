@@ -1,19 +1,69 @@
 <div class="container">
-<img src="assets/boite.png" class="boite-img">
-<div class="content">
-<span>Découvrez la boite à histoires Alif Story</span>
-<div class="links">
-    <span class="commander-btn">COMMANDER</span>
-    <span class="savoir-plus-btn">EN SAVOIR PLUS</span>
-</div>
-</div>
+    <img src="assets/boite.png" class="boite-img">
+    <div class="content">
+        <span>Découvrez la boite à histoires Alif Story</span>
+        <div class="links">
+            <span class="commander-btn">COMMANDER</span>
+            <span class="savoir-plus-btn">EN SAVOIR PLUS</span>
+        </div>
+    </div>
 </div>
 <div class="cards-container">
     <div class="card" *ngFor="let card of cards">
         <div class="card-content">
-         <span class="card-title">{{card.title}}</span>
-         <p class="card-description">{{card.description}}</p>
-         <button>voir plus</button>
+            <span class="card-title">{{card.title}}</span>
+            <p class="card-description">{{card.description}}</p>
+            <button>voir plus</button>
         </div>
     </div>
+</div>
+<div class="middle-container">
+    <div class="middle-cards">
+        <div class="card" *ngFor="let card of middle_cards">
+            <span class="card-icon">{{card.icon}}</span>
+            <p class="card-descr">{{card.desc}}</p>
+        </div>
+    </div>
+</div>
+<div class="products-compl">
+    <div class="product-title">
+        PRODUITS COMPLÉMENTAIRES
+    </div>
+    <div class="content-products">
+        <div class="product-card" *ngFor="let card of products">
+            <span>{{card.title}}</span>
+            <p>img
+            <p>
+            <p>{{card.description}}</p>
+            <button>DÉCOUVRIR</button>
+        </div>
+        <div class="decouvrir">
+            <span>DÉCOUVRIR LES PRODUITS COMPLÉMENTAIRES</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui molestiae soluta enim beatae explicabo quod
+                sunt quibusdam accusamus quas aut incidunt inventore deserunt in, laudantium unde pariatur aspernatur
+                laborum. Architecto.</p>
+            <button>VOIR LA BOUTIQUE</button>
+        </div>
+    </div>
+
+</div>
+<div class="avis-clients">
+    <div class="product-title">
+        Ils nous font confiance
+    </div>
+    <div class="avis-cards">
+        <div class="content" *ngFor="let info of opinions">
+            <span>{{info.name}}</span>
+            <span>{{info.opinion}}</span>
+            <div class="rating">
+                <span class="date">Le {{info.date}}</span>
+                <span class="fa fa-star" [class.checked]="info.rating >= 1"></span>
+                <span class="fa fa-star" [class.checked]="info.rating >= 2"></span>
+                <span class="fa fa-star" [class.checked]="info.rating >= 3"></span>
+                <span class="fa fa-star" [class.checked]="info.rating >= 4"></span>
+                <span class="fa fa-star" [class.checked]="info.rating >= 5"></span>
+            </div>
+        </div>
+    </div>
+    <button>VOIR TOUS LES AVIS</button>
 </div>
