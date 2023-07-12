@@ -1,0 +1,22 @@
+footer{
+    background-color: var(--background-color);
+    .container{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        .footer-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            .logo-img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}
