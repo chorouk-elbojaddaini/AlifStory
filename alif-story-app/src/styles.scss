@@ -57,9 +57,8 @@ $alif-story-app-theme: mat.define-light-theme((
     list-style: none;
 }
 body{
-  
+  margin: 0;
   font-family: 'Dancing Script', cursive !important;
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

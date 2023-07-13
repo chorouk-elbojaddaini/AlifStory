@@ -1,10 +1,12 @@
 button {
-    font-family: 'Dancing Script', cursive;
-    background-color: transparent;
-    color: var(--blue);
-    border: none;
-    cursor: pointer;
     border: 1px solid var(--blue);
+    background-color: transparent;
+    font-family: 'Dancing Script', cursive !important;
+    border-radius: 25px;
+    padding: 12px;
+    height: fit-content;
+    color: var(--blue);
+    cursor: pointer;
 }
 
 .container {
@@ -15,7 +17,7 @@ button {
     padding: 55px;
     height: 60%;
     width: 90vw;
-
+    padding-bottom: 130px;
     .boite-img {
         width: 60%;
         height: 80%;
@@ -41,9 +43,9 @@ button {
         .links {
             span {
                 margin-right: 18px;
-                border-radius: 15px;
+                border-radius: 25px;
                 font-size: .9rem;
-                padding: 10px;
+                padding: 12px;
                 border: 1px solid var(--blue);
                 cursor: pointer;
             }
@@ -220,8 +222,8 @@ button {
                 color: white;
                 font-family: 'Dancing Script', cursive;
                 font-weight: 500;
-                padding: 10px;
-                border-radius: 15px;
+                border-radius: 25px;
+                padding: 12px;
             }
         }
 
@@ -241,8 +243,8 @@ button {
 
             .boutique-btn {
                 width: fit-content;
-                border-radius: 15px;
-                padding: 10px;
+                border-radius: 25px;
+                padding: 12px;
             }
         }
     }
@@ -304,8 +306,8 @@ button {
     }
 
     .btn-voir-tous {
-        padding: 10px;
-        border-radius: 15px;
+        padding: 12px;
+        border-radius: 25px;
     }
 
     .btn-voir-tous:hover {

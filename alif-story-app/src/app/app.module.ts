@@ -10,13 +10,15 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AlifStoryComponent } from './alif-story/alif-story.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AlifStoryComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
