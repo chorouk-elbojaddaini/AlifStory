@@ -1,7 +1,14 @@
-footer{
-    background-color: var(--background-color);
-    background-color: white;
-    .container{
+footer {
+    // background-color: var(--background-color);
+    // background-color: white;
+    background-image: url("../../../assets/Layer2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    padding-top: 140px;
+
+    .container {
         display: flex;
         flex-direction: row;
         gap: 80px;
@@ -9,30 +16,38 @@ footer{
         justify-content: center;
         align-items: center;
         padding: 40px;
-        .footer-col{
+        padding-top: 60px;
+
+        .footer-col {
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 20px;
-           h4{
-            font-family: var(--font-family2);
-            font-size: 20px;
-           }
+
+            h4 {
+                font-family: var(--font-family2);
+                font-size: 20px;
+            }
         }
-        .col-logo-contact{
+
+        .col-logo-contact {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 20px;
-            .logo-img{
+
+            .logo-img {
                 width: 90px;
                 height: 90px;
                 cursor: pointer;
             }
-            .social-media-links{
+
+            .social-media-links {
                 text-align: center;
-                .fa-instagram,.fa-facebook{
+
+                .fa-instagram,
+                .fa-facebook {
                     border-radius: 50%;
                     width: 20px;
                     height: 20px;

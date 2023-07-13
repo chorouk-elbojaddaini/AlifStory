@@ -1,15 +1,20 @@
-
 mat-toolbar {
     height: 60px;
     background-color: var(--brown-color);
+
     .logo-img {
         width: 60px;
         height: 50px;
-        position: absolute;
-        left: 5%;
+        margin-left: 35px;
         margin-top: -5px;
     }
+
+    .menu-icon {
+        visibility: hidden;
+    }
+
 }
+
 .navbar-nav {
     width: 100%;
     position: relative;
@@ -47,4 +52,55 @@ mat-toolbar {
         gap: 5px;
         cursor: pointer;
     }
+}
+
+//============RESPONSIVITE==============
+
+@media only screen and (max-width:950px) {
+    mat-toolbar {
+        .menu-icon {
+            visibility: visible;
+        }
+
+        .opening {
+            left: 80%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    .navbar-nav {
+        position: fixed;
+        left: 100%;
+        top: 140px;
+        display: block;
+        text-align: left;
+        height: 100%;
+        padding: 5px;
+        padding-left: 10px;
+        background-color: var(--brown-color);
+
+        .nav-item {
+            padding-top: 15px;
+        }
+
+    }
+
+    .icon-label-container {
+        position: fixed;
+        width: 100%;
+        left: 100%;
+        top: 44px;
+        display: block;
+        text-align: left;
+        margin-top: 15px;
+        padding: 5px;
+        background-color: var(--brown-color);
+        padding-left: 10px;
+
+        .container {
+            padding-top: 15px;
+        }
+
+    }
+
 }

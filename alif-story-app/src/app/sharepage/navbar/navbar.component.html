@@ -1,32 +1,33 @@
 <nav class="navbar">
-    <mat-toolbar>
-    <img src="assets/logo.png" class="logo-img"/>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Qui sommes nous ?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Alif Story</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Boutique</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">À propos d'éducation</a>
-          </li>
-      </ul>
-      <div class="spacer"></div> 
+  <mat-toolbar>
+    <img src="assets/logo.png" class="logo-img" />
+    <ul class="navbar-nav" [class.opening]="clicked">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Qui sommes nous ?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Alif Story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Boutique</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">À propos d'éducation</a>
+      </li>
+    </ul>
+    <div class="spacer"></div>
 
-    <div class="icon-label-container">
-        <div class="container">
-            <mat-icon>account_circle</mat-icon>
-            <span class="label">connexion</span>
-          </div>
+    <div class="icon-label-container" [class.opening]="clicked">
+      <div class="container">
+        <mat-icon>account_circle</mat-icon>
+        <span class="label">connexion</span>
+      </div>
       <div class="container">
         <mat-icon>shopping_cart</mat-icon>
         <span class="label">Panier</span>
       </div>
-      
+
     </div>
+    <i class="material-icons menu-icon" (click)="openMenu()">menu</i>
   </mat-toolbar>
 </nav>

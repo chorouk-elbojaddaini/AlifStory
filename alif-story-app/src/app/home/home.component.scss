@@ -1,4 +1,4 @@
-button{
+button {
     font-family: 'Dancing Script', cursive;
     background-color: transparent;
     color: var(--blue);
@@ -6,6 +6,7 @@ button{
     cursor: pointer;
     border: 1px solid var(--blue);
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -25,7 +26,7 @@ button{
         display: flex;
         flex-direction: column;
         gap: 50px;
-        
+
 
         >span {
             font-size: 2.5rem;
@@ -51,20 +52,23 @@ button{
                 background-color: var(--blue);
                 color: rgb(252, 252, 252);
                 transition-property: all;
-  transition-duration: 0.3s;
+                transition-duration: 0.3s;
             }
-            .commander-btn:hover{
+
+            .commander-btn:hover {
                 background-color: transparent;
                 color: var(--blue);
 
-                
+
             }
+
             .savoir-plus-btn {
                 color: var(--blue);
                 transition-property: all;
                 transition-duration: 0.3s;
             }
-            .savoir-plus-btn:hover{
+
+            .savoir-plus-btn:hover {
                 background-color: var(--blue);
                 color: rgb(252, 252, 252);
             }
@@ -97,10 +101,12 @@ button{
             gap: 15px;
             padding: 11px;
             color: var(--black);
+
             .card-title {
                 color: var(--blue);
             }
-            .btn-voir-plus{
+
+            .btn-voir-plus {
                 border: none;
                 color: var(--blue);
                 background-color: transparent;
@@ -108,9 +114,10 @@ button{
                 font-weight: 500;
                 font-size: 15px;
             }
-            .btn-voir-plus:hover{
+
+            .btn-voir-plus:hover {
                 color: var(--blue-hover);
-                    transform: scaleX(1.2);
+                transform: scaleX(1.2);
             }
 
         }
@@ -122,6 +129,7 @@ button{
     background-color: white;
     width: 100%;
     height: 170px;
+
     .middle-cards {
         background-color: var(--blue);
         color: white;
@@ -144,7 +152,8 @@ button{
             align-items: center;
             gap: 10px;
         }
-        .card-icon{
+
+        .card-icon {
             width: 47px;
             height: 38px;
         }
@@ -165,10 +174,12 @@ button{
     align-items: center;
     font-family: 'Dancing Script', cursive;
     padding-bottom: 50px;
-    .product-title{
-        color:var(--blue);
-        
+
+    .product-title {
+        color: var(--blue);
+
     }
+
     .content-products {
         display: flex;
         flex-direction: row;
@@ -190,17 +201,20 @@ button{
             gap: 15px;
             justify-content: center;
             align-items: center;
-            .title-prod-card{
+
+            .title-prod-card {
                 font-family: 'Pacifico', cursive;
                 font-weight: 600;
                 font-size: 22px;
             }
-            .img-kid{
+
+            .img-kid {
                 width: 250px;
                 height: 220px;
                 border-radius: 5px;
             }
-            .decouvrir-btn{
+
+            .decouvrir-btn {
                 border: none;
                 background-color: var(--blue);
                 color: white;
@@ -220,9 +234,11 @@ button{
             gap: 12px;
             color: var(--black);
             padding: 8px;
-            .span-decouvrir{
+
+            .span-decouvrir {
                 color: var(--blue);
             }
+
             .boutique-btn {
                 width: fit-content;
                 border-radius: 15px;
@@ -243,12 +259,14 @@ button{
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: 'Dancing Script', cursive;
-    .product-title{
+
+    .product-title {
         font-family: 'Pacifico', cursive;
         font-weight: 600;
         font-size: 24px;
         color: var(--blue);
     }
+
     .avis-cards {
         display: flex;
         flex-direction: row;
@@ -257,10 +275,10 @@ button{
         flex-wrap: wrap;
         gap: 15px;
         padding: 15px;
-      
+
         .content {
             background-color: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 12px;
             border-radius: 5px;
             display: flex;
@@ -270,9 +288,11 @@ button{
             flex-wrap: wrap;
             width: 250px;
             gap: 10px;
-            .name-client{
+
+            .name-client {
                 color: var(--blue);
             }
+
             .rating {
                 .date {
                     margin-right: 15px;
@@ -280,13 +300,15 @@ button{
                 }
             }
         }
-        
+
     }
-    .btn-voir-tous{
+
+    .btn-voir-tous {
         padding: 10px;
         border-radius: 15px;
     }
-    .btn-voir-tous:hover{
+
+    .btn-voir-tous:hover {
         color: white;
         background-color: var(--blue);
     }
@@ -302,4 +324,30 @@ button{
 
 .fa-star.checked {
     color: gold;
+}
+
+
+//===========Responsive=============
+@media only screen and (max-width:980) {
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 55px;
+        height: 60%;
+        width: 90vw;
+
+        .boite-img {
+            width: 60%;
+            height: 80%;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+        }
+    }
 }
