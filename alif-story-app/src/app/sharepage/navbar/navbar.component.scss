@@ -32,6 +32,11 @@ mat-toolbar {
         .nav-link {
             text-decoration: none;
             color: black;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            color: var(--background-color);
         }
     }
 }
@@ -52,8 +57,15 @@ mat-toolbar {
         align-items: center;
         gap: 5px;
         cursor: pointer;
+
+    }
+
+    .container:hover {
+        color: var(--background-color);
+
     }
 }
+
 
 //============RESPONSIVITE==============
 

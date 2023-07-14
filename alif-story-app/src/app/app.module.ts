@@ -12,13 +12,15 @@ import { FooterComponent } from './sharepage/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlifStoryComponent } from './alif-story/alif-story.component';
 import { RouterModule } from '@angular/router';
+import { StoreComponent } from './store/store.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    AlifStoryComponent
+    AlifStoryComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,

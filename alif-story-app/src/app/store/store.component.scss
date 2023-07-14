@@ -1,0 +1,277 @@
+.principale-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    .btns {
+        span {
+            background-color: var(--brown-color);
+            border-radius: 25px;
+            border: 1px solid var(--black);
+            padding: 10px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        span:hover {
+            background-color: var(--background-color);
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+        background-color: white;
+        width: fit-content;
+        height: fit-content;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: 50%;
+            height: 300px;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+
+            .title-card {
+
+                font-size: 15px;
+
+                mat-icon {
+                    float: right;
+                    font-size: 28px;
+                    padding-right: 5px;
+                    margin-top: -4px;
+                    color: var(--blue);
+                }
+            }
+
+            .age-card {
+                background-color: var(--blue2);
+                width: fit-content;
+                border-radius: 5px;
+                padding: 8px;
+                color: rgb(43, 40, 40);
+                font-weight: 200;
+            }
+
+            .price {
+                font-size: 25px;
+                color: rgb(43, 40, 40);
+                font-weight: 200;
+            }
+
+            .add-btn {
+                background-color: var(--blue);
+                color: white;
+                padding: 12px;
+                border-radius: 25px;
+                border: none;
+                width: 50%;
+                align-self: center;
+                cursor: pointer;
+            }
+
+            .add-btn:hover {
+                color: var(--blue);
+                padding: 11px;
+                border: 1px solid var(--blue);
+                background-color: transparent;
+                font-weight: 700;
+            }
+        }
+
+
+    }
+}
+
+//================SECOND SECTION================
+.container {
+    padding: 17px 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+        font-size: 1.5em;
+        font-family: var(--font-family2);
+        font-weight: 200;
+        padding-bottom: 15px;
+    }
+
+    .livrets-pedag {
+        padding: 35px 0;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .pack {
+            background-color: white;
+            width: fit-content;
+            height: fit-content;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 100%;
+                height: 250px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px;
+
+                .title-card {
+
+                    font-size: 15px;
+
+                    mat-icon {
+                        float: right;
+                        font-size: 28px;
+                        padding-right: 5px;
+                        color: var(--blue);
+                    }
+                }
+
+                .age-card {
+                    background-color: var(--blue2);
+                    width: fit-content;
+                    border-radius: 5px;
+                    padding: 8px;
+                    color: rgb(43, 40, 40);
+                    font-weight: 200;
+                }
+
+                .price {
+                    font-size: 25px;
+                    color: rgb(43, 40, 40);
+                    font-weight: 200;
+                }
+
+                .add-btn {
+                    background-color: var(--blue);
+                    color: white;
+                    padding: 12px;
+                    border-radius: 25px;
+                    border: none;
+                    width: 80%;
+                    align-self: center;
+                }
+
+                .add-btn:hover {
+                    color: var(--blue);
+                    border: 1px solid var(--blue);
+                    background-color: transparent;
+                    font-weight: 700;
+                }
+            }
+
+        }
+    }
+
+    .plus-btn {
+        background-color: var(--blue);
+        color: white;
+        margin: 35px;
+        padding: 12px;
+        border-radius: 25px;
+        border: none;
+        align-self: center;
+    }
+
+    .plus-btn:hover {
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        padding: 11px;
+        background-color: transparent;
+        font-weight: 700;
+    }
+}
+
+
+
+//===========Responsivite============
+
+@media (min-width:982px) and (max-width:1246px) {
+    .container {
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+}
+
+@media (min-width:600px) and (max-width:980px) {
+    .container {
+        padding: 30px;
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+}
+
+@media (max-width:857px) {
+    .principale-container {
+        .btns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+
+@media(max-width:671px) {
+    .principale-container {
+        .card {
+            flex-direction: column;
+            width: 70%;
+
+            img {
+                width: 100%;
+                height: 250px;
+            }
+
+            .text-content {
+                .add-btn {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:599px) {
+    .container {
+        padding: 30px;
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    .principale-container {
+        padding: 10px;
+    }
+}

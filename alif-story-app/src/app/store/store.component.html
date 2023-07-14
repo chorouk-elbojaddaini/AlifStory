@@ -1,0 +1,56 @@
+<div class="principale-container">
+    <div class="btns">
+        <span>récits à télécharger</span>
+        <span>récits à télécharger</span>
+        <span>récits à télécharger</span>
+        <span>récits à télécharger</span>
+    </div>
+    <div class="card">
+        <img src="assets/store-imgs/store-img.png">
+        <div class="text-content">
+            <span class="title-card">{{pack[0].title}} <mat-icon class="favorite-icon">favorite_border</mat-icon>
+            </span>
+            <span class="age-card">{{pack[0].age}}</span>
+            <p class="description-card">
+                {{pack[0].description}}
+            </p>
+            <span class="price">{{pack[0].price}}</span>
+            <button class="add-btn">AJOUTER AU PANIER</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h5>Les packs</h5>
+    <div class="cards">
+        <div class="pack" *ngFor="let pack of displayedPacks">
+            <img src="assets/store-imgs/store-img.png">
+            <div class="content">
+                <span class="title-card">{{pack.title}} <mat-icon class="favorite-icon">favorite_border</mat-icon>
+                </span>
+                <span class="age-card">{{pack.age}}</span>
+                <p class="description-card">
+                    {{pack.description}}
+                </p>
+                <span class="price">{{pack.price}}</span>
+                <button class="add-btn">AJOUTER AU PANIER</button>
+            </div>
+        </div>
+    </div>
+    <h5 class="livrets-pedag">Les livrets pédagogiques</h5>
+    <div class="cards">
+        <div class="pack" *ngFor="let pack of displayMore">
+            <img src="assets/store-imgs/store-img.png">
+            <div class="content">
+                <span class="title-card">{{pack.title}} <mat-icon class="favorite-icon">favorite_border</mat-icon>
+                </span>
+                <span class="age-card">{{pack.age}}</span>
+                <p class="description-card">
+                    {{pack.description}}
+                </p>
+                <span class="price">{{pack.price}}</span>
+                <button class="add-btn">AJOUTER AU PANIER</button>
+            </div>
+        </div>
+    </div>
+    <button class="plus-btn" (click)="loadMorePacks()">VOIR PLUS DE LIVRETS</button>
+</div>
