@@ -29,29 +29,17 @@
 </div>
 <div class="container-categories">
     <span class="categorie-title">Autre catégorie</span>
-    <div class="categorie-content">
-        <div class="categorie-text">
-            <span>47 RÉCITS / 7 PROPHÈTES</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum sapiente, placeat
-                perspiciatis consequuntur odit similique fuga repellat ratione nostrum nihil reprehenderi</p>
-        </div>
-        <img src="assets/alif-story-imgs/muslim-family.jpg" class="img-categorie">
-
-    </div>
-    <div class="categorie-content">
-        <img src="assets/alif-story-imgs/alifstoryimg.jpg" class="img-categorie">
-        <div class="categorie-text">
-            <span>3H D'ÉCOUTE ET SANS ONDE</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum sapiente, placeat
-                perspiciatis consequuntur odit similique fuga repellat ratione nostrum nihil reprehenderi</p>
-        </div>
-    </div>
-    <div class="categorie-content">
-        <div class="categorie-text">
-            <span>J'ENRICHIE MON EXPÉRIENCE</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum sapiente, placeat
-                perspiciatis consequuntur odit similique fuga repellat ratione nostrum nihil reprehenderi</p>
-        </div>
-        <img src="assets/alif-story-imgs/muslim-family.jpg" class="img-categorie">
-    </div>
+    <app-categorie-content [title]="'47 RÉCITS / 7 PROPHÈTES'"
+[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum sapiente, placeat perspiciatis consequuntur odit similique fuga repellat ratione nostrum nihil reprehenderi'"
+[imageSrc]="'assets/alif-story-imgs/muslim-family.jpg'">
+</app-categorie-content>
+<app-categorie-content [title]="'3H D\'ÉCOUTE ET SANS ONDE'"
+[description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum sapiente, placeat perspiciatis consequuntur odit similique fuga repellat ratione nostrum nihil reprehenderi'"
+[imageSrc]="'assets/alif-story-imgs/alifstoryimg.jpg'"
+[imagePosition]="'right'">
+</app-categorie-content>
+    <app-categorie-content [title]="'J\'ENRICHIE MON EXPÉRIENCE'"
+                       [description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum sapiente, placeat perspiciatis consequuntur odit similique fuga repellat ratione nostrum nihil reprehenderi'"
+                       [imageSrc]="'assets/alif-story-imgs/muslim-family.jpg'">
+</app-categorie-content>
 </div>

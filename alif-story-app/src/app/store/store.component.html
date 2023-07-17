@@ -22,35 +22,13 @@
 <div class="container">
     <h5>Les packs</h5>
     <div class="cards">
-        <div class="pack" *ngFor="let pack of displayedPacks">
-            <img src="assets/store-imgs/store-img.png">
-            <div class="content">
-                <span class="title-card">{{pack.title}} <mat-icon class="favorite-icon">favorite_border</mat-icon>
-                </span>
-                <span class="age-card">{{pack.age}}</span>
-                <p class="description-card">
-                    {{pack.description}}
-                </p>
-                <span class="price">{{pack.price}}</span>
-                <button class="add-btn">AJOUTER AU PANIER</button>
-            </div>
-        </div>
+        <app-card-content *ngFor="let pack of displayedPacks" [pack]="pack">
+        </app-card-content>
     </div>
     <h5 class="livrets-pedag">Les livrets pédagogiques</h5>
     <div class="cards">
-        <div class="pack" *ngFor="let pack of displayMore">
-            <img src="assets/store-imgs/store-img.png">
-            <div class="content">
-                <span class="title-card">{{pack.title}} <mat-icon class="favorite-icon">favorite_border</mat-icon>
-                </span>
-                <span class="age-card">{{pack.age}}</span>
-                <p class="description-card">
-                    {{pack.description}}
-                </p>
-                <span class="price">{{pack.price}}</span>
-                <button class="add-btn">AJOUTER AU PANIER</button>
-            </div>
-        </div>
+        <app-card-content *ngFor="let pack of displayMore" [pack]="pack">
+        </app-card-content>
     </div>
     <button class="plus-btn" (click)="loadMorePacks()">VOIR PLUS DE LIVRETS</button>
 </div>

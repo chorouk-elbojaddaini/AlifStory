@@ -28,6 +28,7 @@
       </div>
 
     </div>
-    <i class="material-icons menu-icon" (click)="openMenu()">menu</i>
+    <i class="material-icons menu-icon" (click)="openMenu()" *ngIf="menuOpened ==false">menu</i>
+    <i class="material-icons menu-icon close-icon" *ngIf="menuOpened" (click)="openMenu()">close</i>
   </mat-toolbar>
 </nav>

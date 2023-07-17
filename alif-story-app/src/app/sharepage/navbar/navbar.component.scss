@@ -1,6 +1,7 @@
 mat-toolbar {
     height: 60px;
     background-color: var(--brown-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .logo-img {
         width: 60px;
@@ -13,6 +14,7 @@ mat-toolbar {
     .menu-icon {
         visibility: hidden;
     }
+
 
 }
 
@@ -71,27 +73,39 @@ mat-toolbar {
 
 @media only screen and (max-width:950px) {
     mat-toolbar {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+
         .menu-icon {
             visibility: visible;
         }
 
+        .close-icon {
+            position: fixed;
+            z-index: 2;
+            right: 10px;
+            top: 8px;
+        }
+
         .opening {
-            left: 80%;
-            transition: 0.4s ease-in-out;
+            //     left: 80%;
+            //     transition: 0.4s ease-in-out;
+            visibility: visible;
         }
     }
 
     .navbar-nav {
         position: fixed;
-        left: 100%;
-        top: 140px;
+        right: 0;
+        width: fit-content;
+        top: 80px;
         display: block;
         text-align: left;
-        height: 50%;
+        height: 100vh;
         padding: 5px;
         z-index: 1;
         padding-left: 10px;
         background-color: var(--brown-color);
+        visibility: hidden;
 
         .nav-item {
             padding-top: 15px;
@@ -101,15 +115,16 @@ mat-toolbar {
 
     .icon-label-container {
         position: fixed;
-        width: 100%;
-        left: 100%;
-        top: 44px;
+        width: 158px;
+        right: 0;
+        top: 0;
         display: block;
         text-align: left;
-        margin-top: 15px;
         padding: 5px;
+        z-index: 1;
         background-color: var(--brown-color);
         padding-left: 10px;
+        visibility: hidden;
 
         .container {
             padding-top: 15px;
