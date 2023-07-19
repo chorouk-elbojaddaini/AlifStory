@@ -31,4 +31,7 @@
     <i class="material-icons menu-icon" (click)="openMenu()" *ngIf="menuOpened ==false">menu</i>
     <i class="material-icons menu-icon close-icon" *ngIf="menuOpened" (click)="openMenu()">close</i>
   </mat-toolbar>
+<!-- Add the blur to the content behind -->
+        <div class="blur-background" *ngIf="menuOpened" (click)="openMenu()"></div>
+      
 </nav>
