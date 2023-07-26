@@ -12,8 +12,9 @@
         animation-duration: 8s;
          animation-iteration-count: infinite;
          animation-direction: alternate-reverse;
-        }
-            .categorie-text {
+    }
+
+    .categorie-text {
         width: 30%;
 
         span {
@@ -30,6 +31,7 @@
 flex-direction: row-reverse;
 }
 
+
 @keyframes move-item{
     0% {
 translate: 0 0;
@@ -40,7 +42,11 @@ translate: 0 -40px;
  50%{
     translate: 0 0;
  }
+ 100%{
+    translate: 0 -40px;
+ }
 }
+
 //================RESPONSIVITE==================
 @media only screen and (max-width:940px) {
     .categorie-content {
@@ -50,6 +56,8 @@ translate: 0 -40px;
 
         .img-categorie {
             width: 50%;
+            animation-name: none;
+            
         }
 
         .categorie-text {
