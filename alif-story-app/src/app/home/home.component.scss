@@ -1,475 +1,475 @@
-button {
-    border: 1px solid var(--blue);
-    background-color: transparent;
-    font-family: 'Dancing Script', cursive !important;
-    border-radius: 25px;
-    padding: 12px;
-    height: fit-content;
-    color: var(--blue);
-    cursor: pointer;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    padding: 55px;
-    height: 60%;
-    padding-bottom: 130px;
-    .boite-img {
-        width: 60%;
-        height: 80%;
-    }
-
-    .content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-
-
-        >span {
-            font-size: 2.5rem;
-            font-weight: 200;
-        }
-
-        .big-title {
-            font-family: 'Pacifico', cursive;
-            color: rgb(22, 20, 20);
-        }
-
-        .links {
-            span {
-                margin-right: 18px;
-                border-radius: 25px;
-                font-size: .9rem;
-                padding: 12px;
-                border: 1px solid var(--blue);
-                cursor: pointer;
-            }
-
-            .commander-btn {
-                background-color: var(--blue);
-                color: rgb(252, 252, 252);
-                transition-property: all;
-                transition-duration: 0.3s;
-            }
-
-            .commander-btn:hover {
-                background-color: transparent;
-                color: var(--blue);
-
-
-            }
-
-            .savoir-plus-btn {
-                color: var(--blue);
-                transition-property: all;
-                transition-duration: 0.3s;
-            }
-
-            .savoir-plus-btn:hover {
-                background-color: var(--blue);
-                color: rgb(252, 252, 252);
-            }
-        }
-    }
-}
-
-//======================CARDS CONTAINER==============
-.cards-container {
-    background-color: white;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-
-    .card {
-        width: 250px;
-        background-color: rgb(255, 255, 255);
-        position: relative;
-        top: -37px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
-        .card-content {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 11px;
-            color: var(--black);
-
-            .card-title {
-                color: var(--blue);
-            }
-
-            .btn-voir-plus {
-                border: none;
-                color: var(--blue);
-                background-color: transparent;
-                cursor: pointer;
-                font-weight: 500;
-                font-size: 15px;
-            }
-
-            .btn-voir-plus:hover {
-                color: var(--blue-hover);
-                transform: scaleX(1.2);
-            }
-
-        }
-    }
-    .card:hover{
-        translate: 0 -15px;
-    }
-}
-
-//================MIDDLE CARDS================
-.middle-container {
-    background-color: white;
-    width: 100%;
-    height: 170px;
-
-    .middle-cards {
-        background-color: var(--blue);
-        color: white;
-        height: fit-content;
-        padding: 25px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: 25px;
-        position: relative;
-
-        .card {
-            border-right: 1px solid rgb(255, 255, 255);
-            padding-right: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card-icon {
-            width: 47px;
-            height: 38px;
-        }
-
-    }
-}
-
-
-//==============PRODUITS COMPLÉMENTAIRES==============
-.products-compl {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    width: 100%;
-    flex-wrap: wrap;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Dancing Script', cursive;
-    padding-bottom: 50px;
-
-    .product-title {
-        color: var(--blue);
-
-    }
-
-    .content-products {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 18px;
-
-        .product-card {
-            width: 300px;
-            height: fit-content;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-right: 15px;
-            padding: 18px;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            justify-content: center;
-            align-items: center;
-
-            .title-prod-card {
-                font-family: 'Pacifico', cursive;
-                font-weight: 600;
-                font-size: 22px;
-            }
-
-            .img-kid {
-                width: 250px;
-                height: 220px;
-                border-radius: 5px;
-            }
-
-            .decouvrir-btn {
-                border: none;
-                background-color: var(--blue);
-                color: white;
-                font-family: 'Dancing Script', cursive;
-                font-weight: 500;
-                border-radius: 25px;
-                padding: 12px;
-            }
-        }
-
-        .decouvrir {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            color: var(--black);
-            padding: 8px;
-
-            .span-decouvrir {
-                color: var(--blue);
-            }
-
-            .boutique-btn {
-                width: fit-content;
-                border-radius: 25px;
-                padding: 12px;
-            }
-        }
-    }
-}
-
-//===============CARDS OF OPINIONS================
-.avis-clients {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-family: 'Dancing Script', cursive;
-
-    .product-title {
-        font-family: 'Pacifico', cursive;
-        font-weight: 600;
-        font-size: 24px;
-        color: var(--blue);
-    }
-
-    .avis-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 15px;
-
-        .content {
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 12px;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 250px;
-            gap: 10px;
-
-            .name-client {
-                color: var(--blue);
-            }
-
-            .rating {
-                color: var(--blue);
-
-                .date {
-                    margin-right: 15px;
-                    color: var(--brown-color);
-                }
-            }
-
-            .fa-star {
-                font-size: 20px;
-            }
-
-            .fa-star.checked {
-                color: gold;
-            }
-        }
-
-    }
-
-    .btn-voir-tous {
-        padding: 12px;
-        border-radius: 25px;
-    }
-
-    .btn-voir-tous:hover {
-        color: white;
-        background-color: var(--blue);
-    }
-}
-
-
-//===========Responsive=============
-@media (max-width:989px) {
-    .middle-container {
-        background-color: white;
-        width: 100%;
-        height: 200px;
-        padding-top: 200px;
-    }
-}
-
-@media only screen and (max-width:980) {
-    .container {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 55px;
-        height: 60%;
-
-        .boite-img {
-            width: 60%;
-            height: 80%;
-        }
-
-        .content {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-
-        }
-    }
-
-
-}
-
-@media (max-width:864px) {
-    .container {
-
-        .content {
-            .links {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
-        }
-    }
-}
-
-@media (max-width:766px) {
-    .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
-        padding: 40px;
-        height: fit-content;
-
-        .content {
-            justify-content: center;
-            align-items: center;
-
-            .links {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                width: 100%;
-                align-items: center;
-                text-align: center;
-                margin-bottom: 70px;
-
-                span {
-                    width: 70%;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:672px) {
-    .container {
-        height: fit-content;
-
-        .content {
-
-            .links {
-                margin-bottom: 80px;
-            }
-        }
-    }
-
-    .cards-container {
-        height: fit-content;
-    }
-
-    .middle-container {
-        background-color: white;
-        width: 100%;
-        height: fit-content;
-        padding-top: 40px;
-
-        .middle-cards {
-            flex-direction: column;
-
-            .card {
-                border-right: none;
-                padding: 10px;
-                border-bottom: 1px solid white;
-            }
-        }
-    }
-
-    .products-compl {
-        padding-top: 40px;
-
-        .content-products {
-            .product-card {
-                width: fit-content;
-            }
-
-            .decouvrir {
-                width: fit-content;
-            }
-        }
-    }
-}
-
-
-@media(max-width:352px) {
-    .products-compl {
-        padding-top: 40px;
-        width: 100%;
-
-        .content-products {
-
-            .product-card {
-                width: fit-content;
-            }
-
-            .decouvrir {
-                width: fit-content;
-            }
-        }
-    }
-}
+// button {
+//     border: 1px solid var(--blue);
+//     background-color: transparent;
+//     font-family: 'Dancing Script', cursive !important;
+//     border-radius: 25px;
+//     padding: 12px;
+//     height: fit-content;
+//     color: var(--blue);
+//     cursor: pointer;
+// }
+
+// .container {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 30px;
+//     align-items: center;
+//     padding: 55px;
+//     height: 60%;
+//     padding-bottom: 130px;
+//     .boite-img {
+//         width: 60%;
+//         height: 80%;
+//     }
+
+//     .content {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 50px;
+
+
+//         >span {
+//             font-size: 2.5rem;
+//             font-weight: 200;
+//         }
+
+//         .big-title {
+//             font-family: 'Pacifico', cursive;
+//             color: rgb(22, 20, 20);
+//         }
+
+//         .links {
+//             span {
+//                 margin-right: 18px;
+//                 border-radius: 25px;
+//                 font-size: .9rem;
+//                 padding: 12px;
+//                 border: 1px solid var(--blue);
+//                 cursor: pointer;
+//             }
+
+//             .commander-btn {
+//                 background-color: var(--blue);
+//                 color: rgb(252, 252, 252);
+//                 transition-property: all;
+//                 transition-duration: 0.3s;
+//             }
+
+//             .commander-btn:hover {
+//                 background-color: transparent;
+//                 color: var(--blue);
+
+
+//             }
+
+//             .savoir-plus-btn {
+//                 color: var(--blue);
+//                 transition-property: all;
+//                 transition-duration: 0.3s;
+//             }
+
+//             .savoir-plus-btn:hover {
+//                 background-color: var(--blue);
+//                 color: rgb(252, 252, 252);
+//             }
+//         }
+//     }
+// }
+
+// //======================CARDS CONTAINER==============
+// .cards-container {
+//     background-color: white;
+//     height: 200px;
+//     display: flex;
+//     flex-direction: row;
+//     gap: 15px;
+//     justify-content: center;
+//     text-align: center;
+//     flex-wrap: wrap;
+
+//     .card {
+//         width: 250px;
+//         background-color: rgb(255, 255, 255);
+//         position: relative;
+//         top: -37px;
+//         border-radius: 5px;
+//         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+//         .card-content {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 15px;
+//             padding: 11px;
+//             color: var(--black);
+
+//             .card-title {
+//                 color: var(--blue);
+//             }
+
+//             .btn-voir-plus {
+//                 border: none;
+//                 color: var(--blue);
+//                 background-color: transparent;
+//                 cursor: pointer;
+//                 font-weight: 500;
+//                 font-size: 15px;
+//             }
+
+//             .btn-voir-plus:hover {
+//                 color: var(--blue-hover);
+//                 transform: scaleX(1.2);
+//             }
+
+//         }
+//     }
+//     .card:hover{
+//         translate: 0 -15px;
+//     }
+// }
+
+// //================MIDDLE CARDS================
+// .middle-container {
+//     background-color: white;
+//     width: 100%;
+//     height: 170px;
+
+//     .middle-cards {
+//         background-color: var(--blue);
+//         color: white;
+//         height: fit-content;
+//         padding: 25px;
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         justify-content: center;
+//         text-align: center;
+//         gap: 25px;
+//         position: relative;
+
+//         .card {
+//             border-right: 1px solid rgb(255, 255, 255);
+//             padding-right: 25px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             gap: 10px;
+//         }
+
+//         .card-icon {
+//             width: 47px;
+//             height: 38px;
+//         }
+
+//     }
+// }
+
+
+// //==============PRODUITS COMPLÉMENTAIRES==============
+// .products-compl {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 25px;
+//     width: 100%;
+//     flex-wrap: wrap;
+//     background-color: white;
+//     justify-content: center;
+//     align-items: center;
+//     font-family: 'Dancing Script', cursive;
+//     padding-bottom: 50px;
+
+//     .product-title {
+//         color: var(--blue);
+
+//     }
+
+//     .content-products {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         gap: 15px;
+//         padding: 18px;
+
+//         .product-card {
+//             width: 300px;
+//             height: fit-content;
+//             background-color: white;
+//             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+//             margin-right: 15px;
+//             padding: 18px;
+//             border-radius: 5px;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 15px;
+//             justify-content: center;
+//             align-items: center;
+
+//             .title-prod-card {
+//                 font-family: 'Pacifico', cursive;
+//                 font-weight: 600;
+//                 font-size: 22px;
+//             }
+
+//             .img-kid {
+//                 width: 250px;
+//                 height: 220px;
+//                 border-radius: 5px;
+//             }
+
+//             .decouvrir-btn {
+//                 border: none;
+//                 background-color: var(--blue);
+//                 color: white;
+//                 font-family: 'Dancing Script', cursive;
+//                 font-weight: 500;
+//                 border-radius: 25px;
+//                 padding: 12px;
+//             }
+//         }
+
+//         .decouvrir {
+//             width: 300px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             gap: 12px;
+//             color: var(--black);
+//             padding: 8px;
+
+//             .span-decouvrir {
+//                 color: var(--blue);
+//             }
+
+//             .boutique-btn {
+//                 width: fit-content;
+//                 border-radius: 25px;
+//                 padding: 12px;
+//             }
+//         }
+//     }
+// }
+
+// //===============CARDS OF OPINIONS================
+// .avis-clients {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     gap: 25px;
+//     margin-top: 25px;
+//     margin-bottom: 25px;
+//     font-family: 'Dancing Script', cursive;
+
+//     .product-title {
+//         font-family: 'Pacifico', cursive;
+//         font-weight: 600;
+//         font-size: 24px;
+//         color: var(--blue);
+//     }
+
+//     .avis-cards {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         flex-wrap: wrap;
+//         gap: 15px;
+//         padding: 15px;
+
+//         .content {
+//             background-color: white;
+//             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+//             padding: 12px;
+//             border-radius: 5px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             flex-wrap: wrap;
+//             width: 250px;
+//             gap: 10px;
+
+//             .name-client {
+//                 color: var(--blue);
+//             }
+
+//             .rating {
+//                 color: var(--blue);
+
+//                 .date {
+//                     margin-right: 15px;
+//                     color: var(--brown-color);
+//                 }
+//             }
+
+//             .fa-star {
+//                 font-size: 20px;
+//             }
+
+//             .fa-star.checked {
+//                 color: gold;
+//             }
+//         }
+
+//     }
+
+//     .btn-voir-tous {
+//         padding: 12px;
+//         border-radius: 25px;
+//     }
+
+//     .btn-voir-tous:hover {
+//         color: white;
+//         background-color: var(--blue);
+//     }
+// }
+
+
+// //===========Responsive=============
+// @media (max-width:989px) {
+//     .middle-container {
+//         background-color: white;
+//         width: 100%;
+//         height: 200px;
+//         padding-top: 200px;
+//     }
+// }
+
+// @media only screen and (max-width:980) {
+//     .container {
+//         flex-direction: column;
+//         flex-wrap: wrap;
+//         align-items: center;
+//         padding: 55px;
+//         height: 60%;
+
+//         .boite-img {
+//             width: 60%;
+//             height: 80%;
+//         }
+
+//         .content {
+//             width: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 50px;
+
+//         }
+//     }
+
+
+// }
+
+// @media (max-width:864px) {
+//     .container {
+
+//         .content {
+//             .links {
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 15px;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width:766px) {
+//     .container {
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         gap: 15px;
+//         padding: 40px;
+//         height: fit-content;
+
+//         .content {
+//             justify-content: center;
+//             align-items: center;
+
+//             .links {
+//                 display: flex;
+//                 flex-direction: column;
+//                 gap: 15px;
+//                 width: 100%;
+//                 align-items: center;
+//                 text-align: center;
+//                 margin-bottom: 70px;
+
+//                 span {
+//                     width: 70%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width:672px) {
+//     .container {
+//         height: fit-content;
+
+//         .content {
+
+//             .links {
+//                 margin-bottom: 80px;
+//             }
+//         }
+//     }
+
+//     .cards-container {
+//         height: fit-content;
+//     }
+
+//     .middle-container {
+//         background-color: white;
+//         width: 100%;
+//         height: fit-content;
+//         padding-top: 40px;
+
+//         .middle-cards {
+//             flex-direction: column;
+
+//             .card {
+//                 border-right: none;
+//                 padding: 10px;
+//                 border-bottom: 1px solid white;
+//             }
+//         }
+//     }
+
+//     .products-compl {
+//         padding-top: 40px;
+
+//         .content-products {
+//             .product-card {
+//                 width: fit-content;
+//             }
+
+//             .decouvrir {
+//                 width: fit-content;
+//             }
+//         }
+//     }
+// }
+
+
+// @media(max-width:352px) {
+//     .products-compl {
+//         padding-top: 40px;
+//         width: 100%;
+
+//         .content-products {
+
+//             .product-card {
+//                 width: fit-content;
+//             }
+
+//             .decouvrir {
+//                 width: fit-content;
+//             }
+//         }
+//     }
+// }
