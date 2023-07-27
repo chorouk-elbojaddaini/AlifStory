@@ -1,4 +1,19 @@
-mat-toolbar {
+
+  //========= Style for the blur background======  
+  .blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900; 
+    display: block;
+    backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(2px);
+  }mat-toolbar {
+    position: relative;
+    z-index: 1000; 
     height: 60px;
     background-color: var(--brown-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -87,8 +102,6 @@ mat-toolbar {
         }
 
         .opening {
-            //     left: 80%;
-            //     transition: 0.4s ease-in-out;
             visibility: visible;
         }
     }
